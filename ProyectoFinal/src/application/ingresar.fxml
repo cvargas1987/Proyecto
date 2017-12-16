@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ingresar">
+   <top>
+      <Label text="INGRESAR" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="48.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E9967A;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="65.0" layoutY="29.0" text="Ingresar Palabra" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="116.0" text="Ingresar Significado" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txt_ISignificado" layoutX="50.0" layoutY="159.0" prefHeight="126.0" prefWidth="483.0" />
+            <TextField fx:id="txt_IPalabra" layoutX="50.0" layoutY="73.0" />
+            <Button fx:id="btn_Iregresar" layoutX="14.0" layoutY="305.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+            <Button fx:id="btn_Iguardar" layoutX="533.0" layoutY="305.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
